@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FFC0C74256CEEFA000181DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC0C73256CEEFA000181DD /* AppDelegate.m */; };
+		8FFC0C77256CEEFA000181DD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC0C76256CEEFA000181DD /* SceneDelegate.m */; };
+		8FFC0C7A256CEEFA000181DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC0C79256CEEFA000181DD /* ViewController.m */; };
+		8FFC0C7D256CEEFA000181DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC0C7B256CEEFA000181DD /* Main.storyboard */; };
+		8FFC0C7F256CEEFC000181DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC0C7E256CEEFC000181DD /* Assets.xcassets */; };
+		8FFC0C82256CEEFC000181DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC0C80256CEEFC000181DD /* LaunchScreen.storyboard */; };
+		8FFC0C85256CEEFC000181DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC0C84256CEEFC000181DD /* main.m */; };
+		8FFC0C9B256CF5A9000181DD /* KKTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC0C9A256CF5A9000181DD /* KKTableCell.m */; };
+		8FFC0C9F256CF7BD000181DD /* KKTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC0C9E256CF7BD000181DD /* KKTableModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8FFC0C6F256CEEFA000181DD /* KKFoldTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKFoldTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FFC0C72256CEEFA000181DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8FFC0C73256CEEFA000181DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8FFC0C75256CEEFA000181DD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8FFC0C76256CEEFA000181DD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8FFC0C78256CEEFA000181DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8FFC0C79256CEEFA000181DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8FFC0C7C256CEEFA000181DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FFC0C7E256CEEFC000181DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FFC0C81256CEEFC000181DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FFC0C83256CEEFC000181DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FFC0C84256CEEFC000181DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FFC0C8C256CEFCB000181DD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8FFC0C99256CF5A9000181DD /* KKTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTableCell.h; sourceTree = "<group>"; };
+		8FFC0C9A256CF5A9000181DD /* KKTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTableCell.m; sourceTree = "<group>"; };
+		8FFC0C9D256CF7BD000181DD /* KKTableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTableModel.h; sourceTree = "<group>"; };
+		8FFC0C9E256CF7BD000181DD /* KKTableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTableModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FFC0C6C256CEEFA000181DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FFC0C66256CEEFA000181DD = {
+			isa = PBXGroup;
+			children = (
+				8FFC0C71256CEEFA000181DD /* KKFoldTableView */,
+				8FFC0C70256CEEFA000181DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FFC0C70256CEEFA000181DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FFC0C6F256CEEFA000181DD /* KKFoldTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FFC0C71256CEEFA000181DD /* KKFoldTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8FFC0C72256CEEFA000181DD /* AppDelegate.h */,
+				8FFC0C73256CEEFA000181DD /* AppDelegate.m */,
+				8FFC0C75256CEEFA000181DD /* SceneDelegate.h */,
+				8FFC0C76256CEEFA000181DD /* SceneDelegate.m */,
+				8FFC0C78256CEEFA000181DD /* ViewController.h */,
+				8FFC0C79256CEEFA000181DD /* ViewController.m */,
+				8FFC0C99256CF5A9000181DD /* KKTableCell.h */,
+				8FFC0C9A256CF5A9000181DD /* KKTableCell.m */,
+				8FFC0C9D256CF7BD000181DD /* KKTableModel.h */,
+				8FFC0C9E256CF7BD000181DD /* KKTableModel.m */,
+				8FFC0C8C256CEFCB000181DD /* PrefixHeader.pch */,
+				8FFC0C7B256CEEFA000181DD /* Main.storyboard */,
+				8FFC0C7E256CEEFC000181DD /* Assets.xcassets */,
+				8FFC0C80256CEEFC000181DD /* LaunchScreen.storyboard */,
+				8FFC0C83256CEEFC000181DD /* Info.plist */,
+				8FFC0C84256CEEFC000181DD /* main.m */,
+			);
+			path = KKFoldTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FFC0C6E256CEEFA000181DD /* KKFoldTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FFC0C88256CEEFC000181DD /* Build configuration list for PBXNativeTarget "KKFoldTableView" */;
+			buildPhases = (
+				8FFC0C6B256CEEFA000181DD /* Sources */,
+				8FFC0C6C256CEEFA000181DD /* Frameworks */,
+				8FFC0C6D256CEEFA000181DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKFoldTableView;
+			productName = KKFoldTableView;
+			productReference = 8FFC0C6F256CEEFA000181DD /* KKFoldTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FFC0C67256CEEFA000181DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8FFC0C6E256CEEFA000181DD = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8FFC0C6A256CEEFA000181DD /* Build configuration list for PBXProject "KKFoldTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FFC0C66256CEEFA000181DD;
+			productRefGroup = 8FFC0C70256CEEFA000181DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FFC0C6E256CEEFA000181DD /* KKFoldTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FFC0C6D256CEEFA000181DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC0C82256CEEFC000181DD /* LaunchScreen.storyboard in Resources */,
+				8FFC0C7F256CEEFC000181DD /* Assets.xcassets in Resources */,
+				8FFC0C7D256CEEFA000181DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FFC0C6B256CEEFA000181DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC0C7A256CEEFA000181DD /* ViewController.m in Sources */,
+				8FFC0C74256CEEFA000181DD /* AppDelegate.m in Sources */,
+				8FFC0C85256CEEFC000181DD /* main.m in Sources */,
+				8FFC0C9B256CF5A9000181DD /* KKTableCell.m in Sources */,
+				8FFC0C9F256CF7BD000181DD /* KKTableModel.m in Sources */,
+				8FFC0C77256CEEFA000181DD /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FFC0C7B256CEEFA000181DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FFC0C7C256CEEFA000181DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FFC0C80256CEEFC000181DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FFC0C81256CEEFC000181DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FFC0C86256CEEFC000181DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FFC0C87256CEEFC000181DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FFC0C89256CEEFC000181DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KKFoldTableView/PrefixHeader.pch";
+				INFOPLIST_FILE = KKFoldTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KKFoldTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FFC0C8A256CEEFC000181DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KKFoldTableView/PrefixHeader.pch";
+				INFOPLIST_FILE = KKFoldTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KKFoldTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FFC0C6A256CEEFA000181DD /* Build configuration list for PBXProject "KKFoldTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FFC0C86256CEEFC000181DD /* Debug */,
+				8FFC0C87256CEEFC000181DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FFC0C88256CEEFC000181DD /* Build configuration list for PBXNativeTarget "KKFoldTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FFC0C89256CEEFC000181DD /* Debug */,
+				8FFC0C8A256CEEFC000181DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FFC0C67256CEEFA000181DD /* Project object */;
+}
