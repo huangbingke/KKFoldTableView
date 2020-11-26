@@ -1,0 +1,38 @@
+{
+    "level": "0",
+    "childrenMenus": [
+        {
+            "level": "1",
+            "childrenMenus": [
+                {
+                    "level": "2",
+                    "childrenMenus": [
+                        {
+                            "level": "3",
+                            "childrenMenus": [
+                                {
+                                    "level": "4",
+                                    "childrenMenus": [
+                                        {
+                                            "level": "5",
+                                            "childrenMenus": [
+                                                {
+                                                    "level": "7",
+                                                    "childrenMenus": [
+
+                                                        
+                                                    ]
+                                                }
+                                                
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

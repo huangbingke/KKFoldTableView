@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL isOpen;
 
-@property (nonatomic, copy) NSArray<KKTableModel *> *menuModelArray;
+@property (nonatomic, copy) NSArray<KKTableModel *> *childrenMenus;
 
 - (instancetype)initWithLevel:(NSInteger)level;
 

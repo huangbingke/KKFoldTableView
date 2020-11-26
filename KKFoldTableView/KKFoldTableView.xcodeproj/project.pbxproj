@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FEEF651256F557300D6BC61 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		8FFC0C6F256CEEFA000181DD /* KKFoldTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKFoldTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFC0C72256CEEFA000181DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FFC0C73256CEEFA000181DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 				8FFC0C9D256CF7BD000181DD /* KKTableModel.h */,
 				8FFC0C9E256CF7BD000181DD /* KKTableModel.m */,
 				8FFC0C8C256CEFCB000181DD /* PrefixHeader.pch */,
+				8FEEF651256F557300D6BC61 /* Data.json */,
 				8FFC0C7B256CEEFA000181DD /* Main.storyboard */,
 				8FFC0C7E256CEEFC000181DD /* Assets.xcassets */,
 				8FFC0C80256CEEFC000181DD /* LaunchScreen.storyboard */,

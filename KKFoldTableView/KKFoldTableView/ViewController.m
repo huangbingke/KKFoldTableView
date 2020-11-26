@@ -30,29 +30,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KKTableModel *model = self.dataArray[indexPath.row];
-    if (model.level == 0) {
-        KKFirstCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KKFirstCell" forIndexPath:indexPath];
-        cell.model = model;
-        return cell;
-    } else if (model.level == 1) {
-        KKSecondCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KKSecondCell" forIndexPath:indexPath];
-        cell.model = model;
-        return cell;
-    } else if (model.level == 2) {
-        KKThirdCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KKThirdCell" forIndexPath:indexPath];
-        cell.model = model;
-        return cell;
-    } else if (model.level == 3) {
-        KKFourthCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KKFourthCell" forIndexPath:indexPath];
-        cell.model = model;
-        return cell;
-    } else if (model.level == 4) {
-        KKFifthCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KKFifthCell" forIndexPath:indexPath];
-        cell.model = model;
-        return cell;
-    }
-    
-    return UITableViewCell.new;
+    KKTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KKTableCell" forIndexPath:indexPath];
+    cell.model = model;
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,30 +45,26 @@
     model.isOpen = !model.isOpen;
     NSMutableArray *indexPaths = [NSMutableArray new];
     if (model.isOpen) {
-        for (int i = 1; i < model.menuModelArray.count+1; i++) {
+        for (int i = 1; i < model.childrenMenus.count+1; i++) {
             NSIndexPath *index = [NSIndexPath indexPathForRow:indexPath.row+i inSection:0];
             [indexPaths addObject:index];
         }
-        NSRange range = NSMakeRange(indexPath.row+1, [model.menuModelArray count]);
+        NSRange range = NSMakeRange(indexPath.row+1, [model.childrenMenus count]);
         NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:range];
-        [self.dataArray insertObjects:model.menuModelArray atIndexes: indexSet];
+        [self.dataArray insertObjects:model.childrenMenus atIndexes: indexSet];
         [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:(UITableViewRowAnimationNone)];
     } else {
         NSMutableArray <KKTableModel *> *tempArr = self.dataArray.mutableCopy;
-        for (int i = (int)indexPath.row+1; i <= tempArr.count+1; i++) {
-            if ((i == tempArr.count) || tempArr[i].level <= model.level) {
-                NSRange range = NSMakeRange(indexPath.row+1, i - (int)indexPath.row-1);
-                for (int j = (int)indexPath.row+1; j < (int)indexPath.row + range.length+1; j++) {
-                    NSIndexPath *index = [NSIndexPath indexPathForRow:j inSection:0];
-                    [indexPaths addObject:index];
-                    KKTableModel *model = self.dataArray[j];
-                    model.isOpen = NO;
-                }
-                [self.dataArray removeObjectsInRange:range];
-                [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:(UITableViewRowAnimationNone)];
-                break;
+        for (int i = (int)indexPath.row+1; i < tempArr.count; i++) {
+            KKTableModel *nextModel = tempArr[i];
+            if (nextModel.level > model.level) {
+                nextModel.isOpen = NO;
+                NSIndexPath *index = [NSIndexPath indexPathForRow:i inSection:0];
+                [indexPaths addObject:index];
+                [self.dataArray removeObjectAtIndex:indexPath.row+1];
             }
         }
+        [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:(UITableViewRowAnimationNone)];
     }
 }
 
@@ -100,11 +76,7 @@
         _tableView.delegate = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:_tableView];
-        [_tableView registerClass:[KKFirstCell class] forCellReuseIdentifier:@"KKFirstCell"];
-        [_tableView registerClass:[KKSecondCell class] forCellReuseIdentifier:@"KKSecondCell"];
-        [_tableView registerClass:[KKThirdCell class] forCellReuseIdentifier:@"KKThirdCell"];
-        [_tableView registerClass:[KKFourthCell class] forCellReuseIdentifier:@"KKFourthCell"];
-        [_tableView registerClass:[KKFifthCell class] forCellReuseIdentifier:@"KKFifthCell"];
+        [_tableView registerClass:[KKTableCell class] forCellReuseIdentifier:@"KKTableCell"];
         _tableView.tableFooterView = UIView.new;
     }
     return _tableView;
@@ -127,18 +99,24 @@
                         NSMutableArray *model4Array = [NSMutableArray new];
                         for (int i = 0; i < 4; i++) {
                             KKTableModel *model4 = [[KKTableModel alloc] initWithLevel:4];
+                            NSMutableArray *model5Array = [NSMutableArray new];
+                            for (int i = 0; i < 4; i++) {
+                                KKTableModel *model5 = [[KKTableModel alloc] initWithLevel:5];
+                                [model5Array addObject:model5];
+                            }                            
+                            model4.childrenMenus = model5Array;
                             [model4Array addObject:model4];
                         }
-                        model3.menuModelArray = model4Array;
+                        model3.childrenMenus = model4Array;
                         [model3Array addObject:model3];
                     }
-                    model2.menuModelArray = model3Array;
+                    model2.childrenMenus = model3Array;
                     [model2Array addObject:model2];
                 }
-                model1.menuModelArray = model2Array;
+                model1.childrenMenus = model2Array;
                 [model1Array addObject:model1];
             }
-            model0.menuModelArray = model1Array;
+            model0.childrenMenus = model1Array;
             [_dataArray addObject:model0];
         }
     }

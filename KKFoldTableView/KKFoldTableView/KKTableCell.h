@@ -18,37 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface KKFirstCell : KKTableCell
-
-@end
-
-
-@interface KKSecondCell : KKTableCell
-
-@end
-
-
-@interface KKThirdCell : KKTableCell
-
-@end
-
-
-@interface KKFourthCell : KKTableCell
-
-@end
-
-@interface KKFifthCell : KKTableCell
-
-@end
-
-
-
-
-
-
-
-
-
 
 
 
