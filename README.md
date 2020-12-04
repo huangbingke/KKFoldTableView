@@ -2,7 +2,7 @@
 ## 折叠菜单
 ![效果图](https://github.com/huangbingke/KKFoldTableView/blob/main/Image/WX20201125-083538.png)
 
-思路: 展开菜单就插入下一级菜单的cell, 折叠菜单就删除响应的cell.
+思路: 展开菜单就插入下一级菜单的cell, 折叠菜单就删除相应的cell.
 > 核心代码:
 
 ```
